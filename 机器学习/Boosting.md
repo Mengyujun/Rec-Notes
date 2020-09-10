@@ -14,7 +14,7 @@
 
 主要是总结上述链接中pdf的内容：
 
-![image-20200909211450764](C:\Users\MYJ\AppData\Roaming\Typora\typora-user-images\image-20200909211450764.png)
+![image-20200909211450764](https://i.loli.net/2020/09/10/AIcgm6H59ROEYPG.png)
 
 
 
@@ -22,11 +22,11 @@
 
 **定义**： 泰勒公式是一个用函数在某点的信息描述其附近取值的公式。**局部有效性** 就是用**多项式函数去逼近光滑函数**
 
-![image-20200909212938584](C:\Users\MYJ\AppData\Roaming\Typora\typora-user-images\image-20200909212938584.png)
+![image-20200909212938584](https://i.loli.net/2020/09/10/FDk4UnW2Cd5qpJe.png)
 
 迭代形式：
 
-![image-20200909213634833](C:\Users\MYJ\AppData\Roaming\Typora\typora-user-images\image-20200909213634833.png)
+![image-20200909213634833](https://i.loli.net/2020/09/10/nNhvlUqQHIrX5iy.png)
 
 
 
@@ -34,7 +34,7 @@
 
 在机器学习任务中，需要最小化损失函数L(theta)，其中是要求解的模型参数。梯度下降法常用来求解这种无约束最优化问题，它是一种迭代方法：选取初值theta_0 ，不断迭代，更新 theta 的值，进行损失函数的极小化
 
-![image-20200909214734540](C:\Users\MYJ\AppData\Roaming\Typora\typora-user-images\image-20200909214734540.png)
+![image-20200909214734540](https://i.loli.net/2020/09/10/9BADFOcHeaIdLjr.png)
 
 
 
@@ -44,11 +44,11 @@
 
 迭代公式同上
 
-![image-20200909220455133](C:\Users\MYJ\AppData\Roaming\Typora\typora-user-images\image-20200909220455133.png)
+![image-20200909220455133](https://i.loli.net/2020/09/10/CdpNva3rmn2OTLH.png)
 
-![image-20200909221032015](C:\Users\MYJ\AppData\Roaming\Typora\typora-user-images\image-20200909221032015.png)
+![image-20200909221032015](https://i.loli.net/2020/09/10/nq4dOJzDjwype7R.png)
 
-![image-20200909221105935](C:\Users\MYJ\AppData\Roaming\Typora\typora-user-images\image-20200909221105935.png)
+![image-20200909221105935](https://i.loli.net/2020/09/10/Ka72dkBUsWEfPGp.png)
 
 
 
@@ -66,13 +66,13 @@
 
 GBDT和梯度下降的对比：
 
-![image-20200909221904999](C:\Users\MYJ\AppData\Roaming\Typora\typora-user-images\image-20200909221904999.png)
+![image-20200909221904999](https://i.loli.net/2020/09/10/ZSA6FlN8JEVwBvT.png)
 
-![image-20200909222707227](C:\Users\MYJ\AppData\Roaming\Typora\typora-user-images\image-20200909222707227.png)
+![image-20200909222707227](https://i.loli.net/2020/09/10/LSR8pTKkdUzBmoe.png)
 
 因此 boosting算法是一种加法模型 ：
 
-![image-20200909222802286](C:\Users\MYJ\AppData\Roaming\Typora\typora-user-images\image-20200909222802286.png)
+![image-20200909222802286](https://i.loli.net/2020/09/10/PNL38uvpzFim2fA.png)
 
 
 
@@ -80,17 +80,17 @@ GBDT和梯度下降的对比：
 
 由上文可知，GBDT是一种加法模型，
 
-![image-20200909223256960](C:\Users\MYJ\AppData\Roaming\Typora\typora-user-images\image-20200909223256960.png)
+![image-20200909223256960](https://i.loli.net/2020/09/10/k415F8laT3ghNHX.png)
 
 模型学习策略：
 
-![image-20200909223447332](C:\Users\MYJ\AppData\Roaming\Typora\typora-user-images\image-20200909223447332.png)
+![image-20200909223447332](https://i.loli.net/2020/09/10/6pcbSnDm14rNFZ2.png)
 
 贪心算法： 即每次都局部最优化即可 
 
 GBDT实际算法原理：
 
-![image-20200909223928018](C:\Users\MYJ\AppData\Roaming\Typora\typora-user-images\image-20200909223928018.png)
+![image-20200909223928018](https://i.loli.net/2020/09/10/k5cb3XNSsuwZnat.png)
 
 注： 
 
@@ -114,7 +114,7 @@ GBDT实际算法原理：
 
 #### 模型函数形式
 
-![image-20200909232342259](C:\Users\MYJ\AppData\Roaming\Typora\typora-user-images\image-20200909232342259.png)
+![image-20200909232342259](https://i.loli.net/2020/09/10/4FwEjNXH2K1SMql.png)
 
 注意结果是多颗树的结果的累加
 
@@ -122,7 +122,7 @@ GBDT实际算法原理：
 
 #### 目标函数
 
-![image-20200909232859316](C:\Users\MYJ\AppData\Roaming\Typora\typora-user-images\image-20200909232859316.png)
+![image-20200909232859316](https://i.loli.net/2020/09/10/4WGIP2b8DoAsiCR.png)
 
 即经验损失（训练数据误差）和结构损失（正则化项）
 
@@ -132,9 +132,9 @@ GBDT实际算法原理：
 
 有关正则化的一种解释：
 
-![image-20200909233244965](C:\Users\MYJ\AppData\Roaming\Typora\typora-user-images\image-20200909233244965.png)
+![image-20200909233244965](https://i.loli.net/2020/09/10/en2wcjmGATOQWPi.png)
 
-![image-20200909233334399](C:\Users\MYJ\AppData\Roaming\Typora\typora-user-images\image-20200909233334399.png)
+![image-20200909233334399](https://i.loli.net/2020/09/10/uIRblcFz6ZMJ5NX.png)
 
 不同点： 相比原始的GBDT，XGBoost的目标函数多了正则项，使得学习出来的模型更加不容易过拟合。
 
@@ -275,7 +275,17 @@ lightGBM优化数据并行：
 
    主要是解决回归预测，在做一些调整之后亦可以做分类问题
 
-2. 
+2. 推荐GBDT树的深度：6；（横向比较：DecisionTree/RandomForest需要把树的深度调到15或更高）
+
+3. gbdt 和决策树
+
+   GBDT使用的决策树是CART回归树，无论是处理回归问题还是二分类以及多分类问题都是**CART回归树**而不用分类树；
+
+   **普通决策树**原理在处理**回归问题时用平方误差，处理分类问题用gini系数**，
+
+   GBDT与普通决策树**最核心**的区别就在于它用的是拟合负梯度的思想，每次迭代要拟合的是梯度值（**损失函数的负梯度在当前模型的值作为残差的近似值**），是**连续值**所以都用回归树，不管是处理回归问题还是分类问题；	
+
+4. 
 
 
 
@@ -284,4 +294,53 @@ lightGBM优化数据并行：
 ## GBDT优势
 
 1. 天然的区分**有效特征** 以及 进行 **特征组合**
-2. ![image-20200910115534173](E:\github\面经\机器学习\image-20200910115534173.png)
+2. 
+
+
+
+## GBDT和XGBoost对比区别
+
+1. 基分类器的选择上：
+
+   GBDT主要是**CART决策树**， XGBoost除了**CART还支持 线性分类器** ， xgboost相当于带L1和L2正则化项的逻辑斯蒂回归（分类问题）或者线性回归（回归问题）。
+
+2. 导数阶数
+
+   GBDT用到了**一阶导**， xgboost用到了二阶泰勒展开，有**二阶导数**，求解更快
+
+   此外，xgboost支持自定义代价函数，只要可以一阶 二阶可导
+
+3. 正则化
+
+   GBDT没有正则化
+
+   XGBoost 打分函数综合了loss和正则 正则项里包含了树的叶子节点个数、每个叶子节点上输出的score的L2模的平方和。 防止过拟合
+
+4. **列抽样**（column subsampling）。
+
+   xgboost借鉴了随机森林的做法，支持列抽样，不仅能降低过拟合，还能减少计算，这也是xgboost异于传统gbdt的一个特性。
+
+5. 对缺失值的处理
+
+   对于特征的值有缺失的样本，xgboost可以自动学习出它的分裂方向
+
+6. xgboost支持**并行**
+
+   注意 不是tree粒度的并行，仍然需要一棵树一棵树顺序生成 
+
+   xgboost的并行是在**特征粒度**上的 
+
+   xgboost在训练之前，预先对数据进行了排序，然后保存为**block结构**，后面的迭代中重复地使用这个结构，大大减小计算量。这个block结构也使得并行成为了可能，在进行节点的分裂时，需要计算每个特征的增益，最终选增益最大的那个特征去做分裂，那么各个特征的增益计算就可以开多线程进行。
+
+7. 可并行的近似直方图算法
+
+   节点分裂时， 用贪心法枚举所有可能的分割点 ，内存不足，效率低下
+
+   可并行的近似直方图算法，用于高效地生成候选的分割点。
+
+
+
+
+
+
+
