@@ -4,7 +4,7 @@
 
 基础：
 
-![](C:\Users\MYJ\AppData\Roaming\Typora\typora-user-images\image-20200830162515509.png)
+![](https://i.loli.net/2020/09/10/YgyCE9KStZiJWPN.png)
 
 ## 硬间隔
 

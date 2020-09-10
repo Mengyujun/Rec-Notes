@@ -148,17 +148,17 @@ xgboost即使用了 叶子节点以及叶节点分数两个来控制正则化
 
 首先是常规的 加法模型的展开：
 
-![image-20200909234437053](C:\Users\MYJ\AppData\Roaming\Typora\typora-user-images\image-20200909234437053.png)
+![image-20200909234437053](https://i.loli.net/2020/09/10/5olUsqwWzNecvCF.png)
 
 然后利用泰勒二阶展开：
 
-![image-20200909234606925](C:\Users\MYJ\AppData\Roaming\Typora\typora-user-images\image-20200909234606925.png)
+![image-20200909234606925](https://i.loli.net/2020/09/10/uo8wLh9WzblD4HJ.png)
 
 去掉其中的常数项
 
-![image-20200909235137441](C:\Users\MYJ\AppData\Roaming\Typora\typora-user-images\image-20200909235137441.png)
+![image-20200909235137441](https://i.loli.net/2020/09/10/SrQxMeuz2iN6vsT.png)
 
-![image-20200909235323311](C:\Users\MYJ\AppData\Roaming\Typora\typora-user-images\image-20200909235323311.png)
+![image-20200909235323311](https://i.loli.net/2020/09/10/IK1qzs7Jm2RLtkl.png)
 
 其中 前面1-n 是对样本的累加  后面的 1-T 是对叶节点的累加 
 
@@ -166,13 +166,13 @@ xgboost即使用了 叶子节点以及叶节点分数两个来控制正则化
 
 然后按照**叶节点**对 样本进行整合，  按照**叶节点累加方式**
 
-![image-20200909235757197](C:\Users\MYJ\AppData\Roaming\Typora\typora-user-images\image-20200909235757197.png)
+![image-20200909235757197](https://i.loli.net/2020/09/10/qk2ZgcyKlQO6Ntw.png)
 
 得到目标函数之后，就是令其最小，即可以求导为0 ：
 
 如果能够确定树的结构，即每个叶节点中包含哪些样本确定，整个树确定，此时的**变量变为w_j 即叶节点分数**
 
-![image-20200909235919889](C:\Users\MYJ\AppData\Roaming\Typora\typora-user-images\image-20200909235919889.png)
+![image-20200909235919889](https://i.loli.net/2020/09/10/74SIkZAv8Nyrl52.png)
 
 由上可知，当树的结构确定时，则w_j 和损失函数都可知，那么如何确定树结构？
 
@@ -206,7 +206,7 @@ XGBoost呢？
 
 ##### 其他特性
 
-![image-20200910002914630](C:\Users\MYJ\AppData\Roaming\Typora\typora-user-images\image-20200910002914630.png)
+![image-20200910002914630](https://i.loli.net/2020/09/10/hgraKxR8WLV9b7n.png)
 
 ##### 系统设计（待补充）
 
@@ -244,13 +244,13 @@ LightGBM： Leaf-wise 类似于深度优先   选取具有最大增益的节点�
 1. 垂直切分数据，每个worker只有部分特征
 2. 各找各的最优切分点，之后**通信**再找全局的，再**广播**
 
-![image-20200910003755979](C:\Users\MYJ\AppData\Roaming\Typora\typora-user-images\image-20200910003755979.png)
+![image-20200910003755979](https://i.loli.net/2020/09/10/Q2VgDqbla3KZChx.png)
 
 
 
 LightGBM的优化 
 
-![image-20200910004405310](C:\Users\MYJ\AppData\Roaming\Typora\typora-user-images\image-20200910004405310.png)
+![image-20200910004405310](https://i.loli.net/2020/09/10/C8RdqEAHkeTGQbB.png)
 
 
 
@@ -261,11 +261,11 @@ LightGBM的优化
 1. 每个worker部分数据 
 2. 本地自己的 数据统计直方图 再**汇合全局** 再分裂
 
-![image-20200910003820489](C:\Users\MYJ\AppData\Roaming\Typora\typora-user-images\image-20200910003820489.png)
+![image-20200910003820489](https://i.loli.net/2020/09/10/uZvClqoQH39LmI7.png)
 
 lightGBM优化数据并行：
 
-![image-20200910004543307](C:\Users\MYJ\AppData\Roaming\Typora\typora-user-images\image-20200910004543307.png)
+![image-20200910004543307](https://i.loli.net/2020/09/10/GURksSi4euQJFrD.png)
 
 
 
