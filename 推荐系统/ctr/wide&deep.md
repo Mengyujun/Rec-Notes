@@ -86,9 +86,9 @@ Wide部分只需补充Deep模型的缺点，即记忆能力，这部分主要通
 
    training --  如上图所示  注意里面的各种输入 ：
 
-   - wide侧 ： 一个交叉特征（installed & impression app）
-   - deep侧 ：
-     -  **类别型特征**去学习32维的embedding特征  
+   - wide侧 ： 一个**交叉特征**（installed & impression app）
+   - deep侧 ：既有连续特征也有离散类别特征 
+     -  **类别型特征**去学习32维的embedding特征   
      - **连续型特征**直接 和之后的embedding特征 **concat**  	
 
    model serving --  多线程并行来降低serve的延时 
