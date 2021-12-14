@@ -19,3 +19,18 @@
 >  
 >
 > 它这里的“被曝光的概率”不是单纯的一个item被展示的概率（如果是这样直接统计一下历史数据拿来当先验概率用就够了），而是想要端到端地建模“被用户真正注意到”的概率，然后再基于所有的item都“被用户真正注意到”的这样一个“公平”的先验，来预测它们的ctr，实际线上使用默认的位置（也就是相同的位置）是暗含了这个条件的”所有的item都在同一个位置被曝光，那么它们被注意到的条件概率就是相同的“
+>
+>  
+>
+> 类似Inverse Propensity Score的做法，用模型e2e建模出具体位置的IPS加在loss中
+
+参考的几篇论文： 
+
+华为PAL 
+
+YouTube 的paper "Recommending What Video to Watch Next" 
+
+Youtube在Recsys19上的shallow tower 
+
+
+
