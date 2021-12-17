@@ -26,11 +26,11 @@
 
 参考的几篇论文： 
 
-华为PAL 
+华为PAL - 一个单独的模块来建模 
 
-YouTube 的paper "Recommending What Video to Watch Next" 
+YouTube 的paper "Recommending What Video to Watch Next" - shallow tower 
 
-Youtube在Recsys19上的shallow tower 
+
 
 
 
